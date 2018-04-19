@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{fa29f5cd-cbb2-4d4d-aa2d-e3c0e9bc1ca6}</ProjectGuid>
+    <ProjectHome />
+    <StartupFile />
+    <SearchPath />
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <ProjectTypeGuids>{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <LaunchProvider>Standard Python launcher</LaunchProvider>
+    <InterpreterId>Global|PythonCore|3.6</InterpreterId>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition=" '$(VisualStudioVersion)' == '' ">10.0</VisualStudioVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="examples\buy_and_hold_backtest.py" />
+    <Compile Include="examples\monthly_liquidate_rebalance_backtest.py" />
+    <Compile Include="examples\moving_average_cross_backtest.py" />
+    <Compile Include="examples\test_examples.py" />
+    <Compile Include="examples\__init__.py" />
+    <Compile Include="qstrader-tests\test_portfolio.py" />
+    <Compile Include="qstrader-tests\test_portfolio_handler.py" />
+    <Compile Include="qstrader-tests\test_position.py" />
+    <Compile Include="qstrader-tests\test_priceparser.py" />
+    <Compile Include="qstrader-tests\test_price_handler.py" />
+    <Compile Include="qstrader-tests\test_rebalance_position_sizer.py" />
+    <Compile Include="qstrader-tests\test_statistics.py" />
+    <Compile Include="qstrader\compat.py" />
+    <Compile Include="qstrader\compliance\base.py" />
+    <Compile Include="qstrader\compliance\example.py" />
+    <Compile Include="qstrader\compliance\__init__.py" />
+    <Compile Include="qstrader\event.py" />
+    <Compile Include="qstrader\exception.py" />
+    <Compile Include="qstrader\execution_handler\base.py" />
+    <Compile Include="qstrader\execution_handler\ib_simulated.py" />
+    <Compile Include="qstrader\execution_handler\__init__.py" />
+    <Compile Include="qstrader\order\suggested.py" />
+    <Compile Include="qstrader\order\__init__.py" />
+    <Compile Include="qstrader\portfolio.py" />
+    <Compile Include="qstrader\portfolio_handler.py" />
+    <Compile Include="qstrader\position.py" />
+    <Compile Include="qstrader\position_sizer\base.py" />
+    <Compile Include="qstrader\position_sizer\fixed.py" />
+    <Compile Include="qstrader\position_sizer\naive.py" />
+    <Compile Include="qstrader\position_sizer\rebalance.py" />
+    <Compile Include="qstrader\position_sizer\__init__.py" />
+    <Compile Include="qstrader\price_handler\base.py" />
+    <Compile Include="qstrader\price_handler\generic.py" />
+    <Compile Include="qstrader\price_handler\historic_csv_tick.py" />
+    <Compile Include="qstrader\price_handler\ig.py" />
+    <Compile Include="qstrader\price_handler\iq_feed_intraday_csv_bar.py" />
+    <Compile Include="qstrader\price_handler\iterator\base.py" />
+    <Compile Include="qstrader\price_handler\iterator\pandas\bar.py" />
+    <Compile Include="qstrader\price_handler\iterator\pandas\tick.py" />
+    <Compile Include="qstrader\price_handler\iterator\pandas\__init__.py" />
+    <Compile Include="qstrader\price_handler\iterator\__init__.py" />
+    <Compile Include="qstrader\price_handler\yahoo_daily_csv_bar.py" />
+    <Compile Include="qstrader\price_handler\__init__.py" />
+    <Compile Include="qstrader\price_parser.py" />
+    <Compile Include="qstrader\profiling.py" />
+    <Compile Include="qstrader\risk_manager\base.py" />
+    <Compile Include="qstrader\risk_manager\example.py" />
+    <Compile Include="qstrader\risk_manager\__init__.py" />
+    <Compile Include="qstrader\scripts\generate_simulated_prices.py" />
+    <Compile Include="qstrader\scripts\test_scripts.py" />
+    <Compile Include="qstrader\scripts\__init__.py" />
+    <Compile Include="qstrader\sentiment_handler\base.py" />
+    <Compile Include="qstrader\sentiment_handler\sentdex_sentiment_handler.py" />
+    <Compile Include="qstrader\sentiment_handler\__init__.py" />
+    <Compile Include="qstrader\settings.py" />
+    <Compile Include="qstrader\statistics\base.py" />
+    <Compile Include="qstrader\statistics\performance.py" />
+    <Compile Include="qstrader\statistics\simple.py" />
+    <Compile Include="qstrader\statistics\tearsheet.py" />
+    <Compile Include="qstrader\statistics\__init__.py" />
+    <Compile Include="qstrader\strategy\base.py" />
+    <Compile Include="qstrader\strategy\__init__.py" />
+    <Compile Include="qstrader\trading_session.py" />
+    <Compile Include="qstrader\version.py" />
+    <Compile Include="qstrader\__init__.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="examples" />
+    <Folder Include="qstrader" />
+    <Folder Include="qstrader-tests" />
+    <Folder Include="qstrader\compliance" />
+    <Folder Include="qstrader\execution_handler" />
+    <Folder Include="qstrader\order" />
+    <Folder Include="qstrader\position_sizer" />
+    <Folder Include="qstrader\price_handler" />
+    <Folder Include="qstrader\price_handler\iterator" />
+    <Folder Include="qstrader\price_handler\iterator\pandas" />
+    <Folder Include="qstrader\risk_manager" />
+    <Folder Include="qstrader\scripts" />
+    <Folder Include="qstrader\sentiment_handler" />
+    <Folder Include="qstrader\statistics" />
+    <Folder Include="qstrader\strategy" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterpreterReference Include="Global|PythonCore|3.6" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+</Project>
