@@ -637,7 +637,8 @@ class TearsheetStatistics(AbstractStatistics):
         plt.show(block=False)
 
         if filename is not None:
-            fig.savefig(filename, dpi=150, bbox_inches='tight')
+            filename = self.get_filename()
+        fig.savefig(filename, bbox_inches='tight')
 
     def get_filename(self, filename=""):
         if filename == "":

@@ -19,6 +19,13 @@
     <VisualStudioVersion Condition=" '$(VisualStudioVersion)' == '' ">10.0</VisualStudioVersion>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="buy_and_hold_backtest.py" />
+    <Compile Include="crossreference\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="crossreference_test.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="examples\buy_and_hold_backtest.py" />
     <Compile Include="examples\monthly_liquidate_rebalance_backtest.py" />
     <Compile Include="examples\moving_average_cross_backtest.py" />
@@ -86,6 +93,7 @@
     <Compile Include="qstrader\__init__.py" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="crossreference\" />
     <Folder Include="examples" />
     <Folder Include="qstrader" />
     <Folder Include="qstrader-tests" />
